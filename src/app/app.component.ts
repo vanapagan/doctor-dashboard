@@ -1,21 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
-  selector: 'pm-root',
-  template: `
-    <nav class='navbar navbar-expand navbar-light bg-light'>
-        <a class='navbar-brand'>{{pageTitle}}</a>
-        <ul class='nav nav-pills'>
-          <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/welcome']">Home</a></li>
-          <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/products']">Product List</a></li>
-        </ul>
-    </nav>
-    <div class='container'>
-      <router-outlet></router-outlet>
-    </div>
-    `,
-  styleUrls: ['./app.component.css']
+  // tslint:disable-next-line
+  selector: 'body',
+  template: '<router-outlet></router-outlet>'
 })
-export class AppComponent {
-  pageTitle = 'Acme Product Management';
+export class AppComponent implements OnInit {
+  constructor(private router: Router) { }
+
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
+  }
 }
