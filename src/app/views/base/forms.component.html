@@ -1,24 +1,22 @@
-<div class="animated fadeIn">
+<div class="animated fadeIn" style="margin-top: 30px;">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-6">
       <div class="card">
-        <div class="card-header"><h3>Patsient</h3></div>
+        <div class="card-header">
+          <h4>Suggested diagnosis</h4>
+        </div>
         <div class="card-body">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="row">
-                <div class="col-md-4"><strong>First Name:</strong></div>
-                <div class="col-md-8">{{ patient.firstName }}</div>
-              </div>
-              <div class="row">
-                <div class="col-md-4"><strong>Last Name:</strong></div>
-                <div class="col-md-8">{{ patient.lastName }}</div>
-              </div>
-              <div class="row">
-                <div class="col-md-4"><strong>Social Security Number:</strong></div>
-                <div class="col-md-8">{{ patient.socialSecurityNumber }}</div>
-              </div>
-            </div>
+          <div class="chart-wrapper">
+            <canvas
+              baseChart
+              class="chart"
+              [data]="polarAreaChartData"
+              [labels]="polarAreaChartLabels"
+              [legend]="polarAreaLegend"
+              [chartType]="polarAreaChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"
+            ></canvas>
           </div>
         </div>
       </div>

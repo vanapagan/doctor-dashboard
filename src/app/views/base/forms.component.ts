@@ -1,19 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-
-import { IPatient } from './patient';
-import { PatientService } from './patient.service';
+import { Component } from '@angular/core';
 
 @Component({
   templateUrl: 'forms.component.html'
 })
-export class FormsComponent implements OnInit {
+export class FormsComponent {
 
-  errorMessage = '';
-  patient: IPatient | undefined;
+  // PolarArea
+  public polarAreaChartLabels: string[] = [
+    'Migraine',
+    'Work-related stress',
+    'Asthenopia'
+  ];
+  public polarAreaChartData: number[] = [88, 25, 37];
+  public polarAreaLegend = true;
 
-  constructor(private route: ActivatedRoute,
-    private patientService: PatientService) { }
+  public polarAreaChartType = 'polarArea';
+
+  constructor() {}
 
   isCollapsed: boolean = false;
   iconCollapse: string = 'icon-arrow-up';
@@ -30,19 +33,4 @@ export class FormsComponent implements OnInit {
     this.isCollapsed = !this.isCollapsed;
     this.iconCollapse = this.isCollapsed ? 'icon-arrow-down' : 'icon-arrow-up';
   }
-
-  ngOnInit() {
-    // const param = this.route.snapshot.paramMap.get('id');
-    const param = '5bc3f6c14febc74b9b80a96e';
-    if (param) {
-      this.GetPatient(param);
-    }
-  }
-
-  GetPatient(id: string) {
-    this.patientService.getPatient(id).subscribe(
-      patient => this.patient = patient,
-      error => this.errorMessage = <any>error);
-  }
-
 }
