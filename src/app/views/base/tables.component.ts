@@ -22,8 +22,4 @@ export class TablesComponent implements OnInit {
     );
   }
 
-  onBack(): void {
-    this.router.navigate(['/products']);
-  }
-
 }

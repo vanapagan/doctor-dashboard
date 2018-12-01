@@ -29,7 +29,7 @@ export const navItems = [
     icon: 'icon-puzzle'
   },
   {
-    name: 'Quizzes',
+    name: 'Surveys',
     url: '/base/forms',
     icon: 'icon-puzzle'
   },
