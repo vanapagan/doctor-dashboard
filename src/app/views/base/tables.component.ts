@@ -1,10 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { IPatient } from './patient';
+import { PatientService } from './patient.service';
 
 @Component({
   templateUrl: 'tables.component.html'
 })
-export class TablesComponent {
+export class TablesComponent implements OnInit {
 
-  constructor() { }
+  patients: IPatient[] = [];
+  errorMessage: string;
+
+  constructor(private patientService: PatientService) { }
+
+  ngOnInit(): void {
+    this.patientService.getPatients().subscribe(
+        patients => {
+            this.patients = patients;
+        },
+        error => this.errorMessage = <any>error
+    );
+}
 
 }
