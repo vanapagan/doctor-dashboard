@@ -1,15 +1,12 @@
-<div class="animated fadeIn">
+<div class="animated fadeIn" style="margin-top: 30px;">
   <div class="row">
     <!-- /.col -->
     <div class="col-lg-12">
       <div class="card">
         <div class="card-header">
-          <i class="fa fa-align-justify"></i> Migrane patients
-        </div>
-        <div class="card-body">
-          <div class="form-group row">
-            <div class="col-md-12">
-              <div class="input-group">
+          <div class="row">
+            <div class="col-md-9"><h3>Migraine Patients</h3></div>
+            <div class="col-md-3"><div class="input-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text"
                     ><i class="fa fa-search"></i
@@ -20,55 +17,45 @@
                   id="input1-group1"
                   name="input1-group1"
                   class="form-control"
-                  placeholder="Search by First Name, Last Name..."
+                  placeholder="Filter by First Name, Last Name, Status..."
                 />
-              </div>
-            </div>
+              </div></div>
           </div>
-          <table class="table table-striped table-hover">
-            <!--
-              thead>
-                <tr>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Social Security Number</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr *ngFor="let patient of patients">
-                  <td>{{ patient.firstName }}</td>
-                  <td>{{ patient.lastName }}</td>
-                  <td>{{ patient.socialSecurityNumber }}</td>
-                  <td><a href="#">View</a></td>
-                </tr>
-              </tbody
-            -->
+        </div>
+        <div class="card-body">
+          <table class="table table-striped table-hover table-responsive-sm table-bordered">
             <thead>
               <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Age</th>
                 <th>Social Security Number</th>
-                <th>Last Appointment Date</th>
+                <th>Gender</th>
+                <th>Last Appointment</th>
+                <th>Next Appointment</th>
                 <th>Status</th>
               </tr>
             </thead>
             <tbody>
-              <tr style="cursor: pointer;" (click)='onBack()'>
-                <!--td><a [routerLink]="['/base/forms']">Kätlin</a></td-->
+              <tr style="cursor: pointer;">
+                <!-- td><a [routerLink]="['/base/forms']">Kätlin</a></td -->
+                <td>Kätlin</td>
                 <td>Kalamees</td>
                 <td>25</td>
                 <td>49105115378</td>
+                <td>F</td>
                 <td>Today</td>
-                <td><span class="badge badge-danger">Critical</span> <br /></td>
+                <td>05.12.2018</td>
+                <td><span class="badge badge-danger">Critical</span></td>
               </tr>
               <tr style="cursor: pointer;">
                 <td>Taavi</td>
                 <td>Sepp</td>
                 <td>34</td>
                 <td>37102035427</td>
+                <td>M</td>
                 <td>30.11.2018</td>
+                <td></td>
                 <td><span class="badge badge-warning">Moderate</span></td>
               </tr>
               <tr style="cursor: pointer;">
@@ -76,8 +63,50 @@
                 <td>Naarits</td>
                 <td>30</td>
                 <td>38812305434</td>
+                <td>M</td>
                 <td>28.11.2018</td>
+                <td></td>
                 <td><span class="badge badge-success">Mild</span></td>
+              </tr>
+              <tr style="cursor: pointer;">
+                <td>Maarja</td>
+                <td>Kasesalu</td>
+                <td>27</td>
+                <td>37812305434</td>
+                <td>F</td>
+                <td>28.11.2018</td>
+                <td></td>
+                <td><span class="badge badge-success">Mild</span></td>
+              </tr>
+              <tr style="cursor: pointer;">
+                <td>Helen</td>
+                <td>Nõmm</td>
+                <td>21</td>
+                <td>38912305434</td>
+                <td>F</td>
+                <td>27.11.2018</td>
+                <td>11.12.2018</td>
+                <td><span class="badge badge-primary">Hospitalized</span></td>
+              </tr>
+              <tr style="cursor: pointer;">
+                <td>Marek</td>
+                <td>Toobal</td>
+                <td>45</td>
+                <td>39312305434</td>
+                <td>M</td>
+                <td>25.11.2018</td>
+                <td>03.12.2018</td>
+                <td><span class="badge badge-secondary">Unknown</span></td>
+              </tr>
+              <tr style="cursor: pointer;">
+                <td>Herman</td>
+                <td>Salu</td>
+                <td>47</td>
+                <td>39011305434</td>
+                <td>M</td>
+                <td>25.11.2018</td>
+                <td></td>
+                <td><span class="badge badge-warning">Moderate</span></td>
               </tr>
             </tbody>
           </table>

@@ -1,6 +1,6 @@
 export const navItems = [
   {
-    name: 'MADIS METS',
+    name: 'KÄTLIN KALAMEES',
     url: '/base/tables'
   },
   {
