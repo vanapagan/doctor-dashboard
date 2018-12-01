@@ -5,13 +5,27 @@ import { PatientService } from './patient.service';
 @Component({
   templateUrl: 'tables.component.html'
 })
-export class TablesComponent implements OnInit {
+export class TablesComponent {
 
-  patients: IPatient[] = [];
+  patients = [
+    {
+      'id': '5bc3f6c14febc74b9b80a96e',
+      'firstName': 'kert',
+      'lastName': 'pjatkin',
+      'socialSecurityNumber': '39209270263'
+    },
+    {
+      'id': '5bc3f6ee4febc74b9b80a96f',
+      'firstName': 'peeter',
+      'lastName': 'meeter',
+      'socialSecurityNumber': '39209270263'
+    }
+  ];
   errorMessage: string;
 
   constructor(private patientService: PatientService) { }
 
+  /*
   ngOnInit(): void {
     this.patientService.getPatients().subscribe(
         patients => {
@@ -19,6 +33,7 @@ export class TablesComponent implements OnInit {
         },
         error => this.errorMessage = <any>error
     );
+  */
 }
 
 }
