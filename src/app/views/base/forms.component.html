@@ -2,9 +2,7 @@
   <div class="row">
     <div class="col-md-6">
       <div class="card">
-        <div class="card-header">
-          <h4>Suggested diagnosis</h4>
-        </div>
+        <div class="card-header"><h4>Suggested diagnosis</h4></div>
         <div class="card-body">
           <div class="chart-wrapper">
             <canvas
@@ -14,6 +12,27 @@
               [labels]="polarAreaChartLabels"
               [legend]="polarAreaLegend"
               [chartType]="polarAreaChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"
+            ></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card">
+          <div class="card-header"><h4>Amount of medications consumed</h4></div>
+        <div class="card-body">
+          <div class="chart-wrapper">
+            <canvas
+              baseChart
+              class="chart"
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType"
               (chartHover)="chartHovered($event)"
               (chartClick)="chartClicked($event)"
             ></canvas>

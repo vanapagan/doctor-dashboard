@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   templateUrl: 'forms.component.html'
 })
 export class FormsComponent {
-
   // PolarArea
   public polarAreaChartLabels: string[] = [
     'Migraine',
@@ -13,8 +12,28 @@ export class FormsComponent {
   ];
   public polarAreaChartData: number[] = [88, 25, 37];
   public polarAreaLegend = true;
-
   public polarAreaChartType = 'polarArea';
+
+  // barChart
+  public barChartOptions: any = {
+    scaleShowVerticalLines: false,
+    responsive: true
+  };
+  public barChartLabels: string[] = [
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ];
+  public barChartType = 'bar';
+  public barChartLegend = true;
+
+  public barChartData: any[] = [
+    { data: [12, 9, 5, 13, 11, 3, 2], label: 'ibuprofen' },
+    { data: [3, 6, 13, 14, 7, 3, 8], label: 'acetaminophen' }
+  ];
 
   constructor() {}
 
