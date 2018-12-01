@@ -6,19 +6,18 @@ import { PatientService } from './patient.service';
   templateUrl: 'tables.component.html'
 })
 export class TablesComponent implements OnInit {
-
   patients: IPatient[] = [];
   errorMessage: string;
 
-  constructor(private patientService: PatientService) { }
+  constructor(private patientService: PatientService) {}
 
   ngOnInit(): void {
     this.patientService.getPatients().subscribe(
-        patients => {
-            this.patients = patients;
-        },
-        error => this.errorMessage = <any>error
+      patients => {
+        this.patients = patients;
+      },
+      error => (this.errorMessage = <any>error)
     );
-}
+  }
 
 }

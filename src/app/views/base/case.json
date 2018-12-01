@@ -1,0 +1,22 @@
+{
+  "id": "5bc7eab0d9675d613f2ba612",
+  "startedAt": "2018-10-18T02:06:40.152",
+  "questionAnswers": [
+    {
+      "id": null,
+      "question": {
+        "id": "5bc217fc1c9d440000b7b0ef",
+        "questionText": "What medical problem do you have?",
+        "questionType": null,
+        "options": ["Pain", "Rash", "Fever", "Swelling"]
+      },
+      "answer": "Swelling"
+    }
+  ],
+  "patient": {
+    "id": "5bc3f6c14febc74b9b80a96e",
+    "firstName": "kert",
+    "lastName": "pjatkin",
+    "socialSecurityNumber": "39209270263"
+  }
+}

@@ -1,5 +1,5 @@
 export interface IPatient {
-  id: number;
+  id: string;
   firstName: string;
   lastName: string;
   socialSecurityNumber: string;
