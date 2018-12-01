@@ -1,6 +1,6 @@
 export const navItems = [
   {
-    name: 'Patients',
+    name: 'Migraine Patients',
     url: '/base/tables',
     icon: 'icon-puzzle'
   }

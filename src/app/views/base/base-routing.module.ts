@@ -16,6 +16,7 @@ import {TooltipsComponent} from './tooltips.component';
 const routes: Routes = [
   {
     path: '',
+    component: TablesComponent,
     data: {
       title: 'Base'
     },
