@@ -10,7 +10,7 @@ import { IPatient } from './patient';
 })
 export class PatientService {
 
-    private patientUrl = './patients.json';
+    private patientUrl = 'https://md-api.herokuapp.com/patients';
 
     constructor(private http: HttpClient) {}
 
