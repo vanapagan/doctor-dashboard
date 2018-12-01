@@ -1,3 +1,5 @@
+import { ActivatedRoute, Router } from '@angular/router';
+
 import { Component, OnInit } from '@angular/core';
 import { IPatient } from './patient';
 import { PatientService } from './patient.service';
@@ -18,6 +20,10 @@ export class TablesComponent implements OnInit {
       },
       error => (this.errorMessage = <any>error)
     );
+  }
+
+  onBack(): void {
+    this.router.navigate(['/products']);
   }
 
 }
