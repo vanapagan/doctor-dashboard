@@ -16,7 +16,6 @@ const routes: Routes = [
   {
     path: '',
     /*component: TablesComponent,*/
-    component: FormsComponent,
     data: {
       title: 'Base'
     },
