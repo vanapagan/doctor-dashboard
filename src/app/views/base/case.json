@@ -1,22 +1,166 @@
-{
-  "id": "5bc7eab0d9675d613f2ba612",
-  "startedAt": "2018-10-18T02:06:40.152",
-  "questionAnswers": [
-    {
-      "id": null,
-      "question": {
-        "id": "5bc217fc1c9d440000b7b0ef",
-        "questionText": "What medical problem do you have?",
-        "questionType": null,
-        "options": ["Pain", "Rash", "Fever", "Swelling"]
+[
+  {
+    "id": "5c02751045c09d000419d4a1",
+    "startedAt": "2018-12-01T11:48:32.367",
+    "questionAnswers": [
+      {
+        "id": null,
+        "question": {
+          "id": "5c026544be6d4900041c2838",
+          "questionText": "Mitmel päeval kuus esineb teil peavalu, mis vajab medikamentoosset sekkumist?",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": ["1-14 päeval", "15-31 päeval", ""]
+        },
+        "answer": "1-14 päeval"
       },
-      "answer": "Swelling"
+      {
+        "id": null,
+        "question": {
+          "id": "5c0265c7be6d4900041c2839",
+          "questionText": "Kas medikamentoosne ravi on olnud efektiivne?",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": ["Pigem jah", "Pigem ei "]
+        },
+        "answer": "Pigem jah"
+      },
+      {
+        "id": null,
+        "question": {
+          "id": "5c0266c4be6d4900041c283b",
+          "questionText": "Kas peavalu teke oli väga kiire/järsu algusega?",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": ["Jah", "Ei"]
+        },
+        "answer": "Jah"
+      },
+      {
+        "id": null,
+        "question": {
+          "id": "5c01a32fd83fc400041add04",
+          "questionText": "Kas peavalu reeglina esineb ühel peapoolel?",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": ["Jah", "Ei"]
+        },
+        "answer": "Jah"
+      },
+      {
+        "id": null,
+        "question": {
+          "id": "5c026b2dbe6d4900041c283d",
+          "questionText": "Kas peavalu lokaliseerub enamasti:",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": [
+            "Otsmikul",
+            "Oimukohal",
+            "Silmakoopas",
+            "Kukal",
+            "Ümber kogu pea"
+          ]
+        },
+        "answer": "Ümber kogu pea"
+      },
+      {
+        "id": null,
+        "question": {
+          "id": "5c01a367d83fc400041add05",
+          "questionText": "Kas valu on iseloomult:",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": ["Pulseeriv", "Survetunne/suruv"]
+        },
+        "answer": "Pulseeriv"
+      },
+      {
+        "id": null,
+        "question": {
+          "id": "5c01a56cd83fc400041add07",
+          "questionText": "Kirjelda oma valu intensiivsust 10-pallisüsteemis",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": ["0-5", "6-10"]
+        },
+        "answer": "0-5"
+      },
+      {
+        "id": null,
+        "question": {
+          "id": "5c01a3cbd83fc400041add06",
+          "questionText": "Kas peavaluhoog tavaliselt kestab: ",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": ["Üle 4 tunni", "Kuni 4 tundi"]
+        },
+        "answer": "Üle 4 tunni"
+      },
+      {
+        "id": null,
+        "question": {
+          "id": "5c01a8efd83fc400041add08",
+          "questionText": "Kas peavaluga kaasneb iiveldust/oksendamist?",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": ["Jah", "Ei"]
+        },
+        "answer": "Jah"
+      },
+      {
+        "id": null,
+        "question": {
+          "id": "5c01a90fd83fc400041add09",
+          "questionText": "Kas müra/valgus tunduvad valu ajal talumatud?",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": ["Jah", "Ei"]
+        },
+        "answer": "Jah"
+      },
+      {
+        "id": null,
+        "question": {
+          "id": "5c01aa21d83fc400041add0a",
+          "questionText": "Kas kõndimine või muu kerge füüsiline tegevus süvendab peavalu?",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": ["Jah", "Ei"]
+        },
+        "answer": "Jah"
+      },
+      {
+        "id": null,
+        "question": {
+          "id": "5c01ab32d83fc400041add0b",
+          "questionText": "Kas nende tunnustega peavaluhoogusid on esinenud vähemalt viiel korral?",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": ["Jah", "Ei"]
+        },
+        "answer": "Ei"
+      },
+      {
+        "id": null,
+        "question": {
+          "id": "5c01ae20d83fc400041add0c",
+          "questionText": "Kas peavalu ajal/sellele eelnevalt on esinenud mõnda järgnevatest sümptomitest?",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": [
+            "Nägemishäire",
+            "Tundlikkuse häire ühel kehapoolel",
+            "Kõnehäire",
+            "Häired liigutustel",
+            "Pearinglus/tasakaaluhäire"
+          ]
+        },
+        "answer": "Häired liigutustel"
+      },
+      {
+        "id": null,
+        "question": {
+          "id": "5c0267fbbe6d4900041c283c",
+          "questionText": "Kas eelpool toodud sümptomeid on esinenud vähemalt kahel peavalu episoodil?",
+          "questionType": "MULTIPLE_CHOICE",
+          "options": ["Jah", "Ei", ""]
+        },
+        "answer": "Jah"
+      }
+    ],
+    "patient": {
+      "id": "5bc3f6c14febc74b9b80a96e",
+      "firstName": "kert",
+      "lastName": "pjatkin",
+      "socialSecurityNumber": "39209270263"
     }
-  ],
-  "patient": {
-    "id": "5bc3f6c14febc74b9b80a96e",
-    "firstName": "kert",
-    "lastName": "pjatkin",
-    "socialSecurityNumber": "39209270263"
   }
-}
+]
