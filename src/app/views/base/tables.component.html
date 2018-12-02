@@ -3,10 +3,88 @@
     <!-- /.col -->
     <div class="col-lg-12">
       <div class="card">
+        <div class="card-header"><h4>Migraine Patients Overview</h4></div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="callout callout-info">
+                    <small class="text-muted">Patients Total</small> <br />
+                    <strong class="h4">1263</strong>
+                  </div>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-4">
+                  <div class="callout callout-danger">
+                    <small class="text-muted">Ongoing treatments</small> <br />
+                    <strong class="h4">91</strong>
+                  </div>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-4">
+                  <div class="callout callout-danger">
+                    <small class="text-muted">Diagnosis accuracy</small> <br />
+                    <strong class="h4">89%</strong>
+                  </div>
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <div class="col-md-9">
+              <div class="progress-group">
+                <div class="progress-group-header">
+                  <i class="icon-user progress-group-icon"></i>
+                  <div>Male</div>
+                  <div class="ml-auto font-weight-bold">17%</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div
+                      class="progress-bar bg-warning"
+                      role="progressbar"
+                      style="width: 17%"
+                      aria-valuenow="17"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <div class="progress-group-header">
+                  <i class="icon-user-female progress-group-icon"></i>
+                  <div>Female</div>
+                  <div class="ml-auto font-weight-bold">83%</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div
+                      class="progress-bar bg-warning"
+                      role="progressbar"
+                      style="width: 83%"
+                      aria-valuenow="83"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="card">
         <div class="card-header">
           <div class="row">
-            <div class="col-md-9"><h3>Migraine Patients</h3></div>
-            <div class="col-md-3"><div class="input-group">
+            <div class="col-md-9"><h4>Upcoming appointments</h4></div>
+            <div class="col-md-3">
+              <div class="input-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text"
                     ><i class="fa fa-search"></i
@@ -19,11 +97,14 @@
                   class="form-control"
                   placeholder="Filter by First Name, Last Name, Status..."
                 />
-              </div></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card-body">
-          <table class="table table-striped table-hover table-responsive-sm table-bordered">
+          <table
+            class="table table-striped table-hover table-responsive-sm table-bordered"
+          >
             <thead>
               <tr>
                 <th>First Name</th>
@@ -55,9 +136,65 @@
                 <td>37102035427</td>
                 <td>M</td>
                 <td>30.11.2018</td>
-                <td></td>
-                <td><span class="badge badge-warning">Moderate</span></td>
+                <td>05.12.2018</td>
+                <td><span class="badge badge-danger">Critical</span></td>
               </tr>
+              <tr style="cursor: pointer;">
+                <td>Marek</td>
+                <td>Toobal</td>
+                <td>45</td>
+                <td>39312305434</td>
+                <td>M</td>
+                <td>25.11.2018</td>
+                <td>07.12.2018</td>
+                <td><span class="badge badge-secondary">Unknown</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-md-9"><h4>Ongoing treatment</h4></div>
+            <div class="col-md-3">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fa fa-search"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  id="input1-group1"
+                  name="input1-group1"
+                  class="form-control"
+                  placeholder="Filter by First Name, Last Name, Status..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <table
+            class="table table-striped table-hover table-responsive-sm table-bordered"
+          >
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Social Security Number</th>
+                <th>Gender</th>
+                <th>Last Appointment</th>
+                <th>Next Appointment</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
               <tr style="cursor: pointer;">
                 <td>Tõnis</td>
                 <td>Naarits</td>
@@ -66,7 +203,17 @@
                 <td>M</td>
                 <td>28.11.2018</td>
                 <td></td>
-                <td><span class="badge badge-success">Mild</span></td>
+                <td><span class="badge badge-danger">Critical</span></td>
+              </tr>
+              <tr style="cursor: pointer;">
+                <td>Herman</td>
+                <td>Salu</td>
+                <td>47</td>
+                <td>39011305434</td>
+                <td>M</td>
+                <td>06.11.2018</td>
+                <td></td>
+                <td><span class="badge badge-warning">Moderate</span></td>
               </tr>
               <tr style="cursor: pointer;">
                 <td>Maarja</td>
@@ -75,7 +222,7 @@
                 <td>37812305434</td>
                 <td>F</td>
                 <td>28.11.2018</td>
-                <td></td>
+                <td>15.12.2018</td>
                 <td><span class="badge badge-success">Mild</span></td>
               </tr>
               <tr style="cursor: pointer;">
@@ -85,18 +232,74 @@
                 <td>38912305434</td>
                 <td>F</td>
                 <td>27.11.2018</td>
-                <td>11.12.2018</td>
+                <td></td>
                 <td><span class="badge badge-primary">Hospitalized</span></td>
               </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-md-9"><h4>Chronically ill</h4></div>
+            <div class="col-md-3">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fa fa-search"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  id="input1-group1"
+                  name="input1-group1"
+                  class="form-control"
+                  placeholder="Filter by First Name, Last Name, Status..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <table
+            class="table table-striped table-hover table-responsive-sm table-bordered"
+          >
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Social Security Number</th>
+                <th>Gender</th>
+                <th>Last Appointment</th>
+                <th>Next Appointment</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
               <tr style="cursor: pointer;">
-                <td>Marek</td>
-                <td>Toobal</td>
-                <td>45</td>
-                <td>39312305434</td>
+                <td>Kätlin</td>
+                <td>Kalamees</td>
+                <td>25</td>
+                <td>49105115378</td>
+                <td>F</td>
+                <td>Today</td>
+                <td>05.12.2018</td>
+                <td><span class="badge badge-danger">Critical</span></td>
+              </tr>
+              <tr style="cursor: pointer;">
+                <td>Taavi</td>
+                <td>Sepp</td>
+                <td>34</td>
+                <td>37102035427</td>
                 <td>M</td>
-                <td>25.11.2018</td>
-                <td>03.12.2018</td>
-                <td><span class="badge badge-secondary">Unknown</span></td>
+                <td>30.11.2018</td>
+                <td></td>
+                <td><span class="badge badge-warning">Moderate</span></td>
               </tr>
               <tr style="cursor: pointer;">
                 <td>Herman</td>
@@ -110,20 +313,10 @@
               </tr>
             </tbody>
           </table>
-
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-            <li class="page-item active">
-              <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
         </div>
       </div>
     </div>
+
     <!-- /.col -->
   </div>
   <!-- /.row -->
