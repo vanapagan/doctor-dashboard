@@ -1,46 +1,46 @@
 export const navItems = [
   {
     name: 'KÄTLIN KALAMEES',
-    url: '/base/tables'
+    url: 'xxx',
   },
   {
     name: 'Personal Information',
-    url: '/base/tables',
+    url: 'xxx',
     icon: 'icon-puzzle'
   },
   {
     name: 'Overview',
-    url: '/base/forms',
+    url: 'xxx',
     icon: 'icon-puzzle'
   },
   {
     name: 'Clinical cases',
-    url: '/base/forms',
+    url: 'xxx',
     icon: 'icon-puzzle'
   },
   {
     name: 'Results',
-    url: '/base/forms',
+    url: 'xxx',
     icon: 'icon-puzzle'
   },
   {
     name: 'Appointments',
-    url: '/base/forms',
+    url: 'xxx',
     icon: 'icon-puzzle'
   },
   {
     name: 'Surveys',
-    url: '/base/forms',
+    url: 'xxx',
     icon: 'icon-puzzle'
   },
   {
     name: 'Feedback',
-    url: '/base/forms',
+    url: 'xxx',
     icon: 'icon-puzzle'
   },
   {
     name: 'Contact',
-    url: '/base/forms',
+    url: 'xxx',
     icon: 'icon-puzzle'
   }
 ];

@@ -20,6 +20,7 @@ export class FormsComponent {
     responsive: true
   };
   public barChartLabels: string[] = [
+    'June',
     'July',
     'August',
     'September',
@@ -31,8 +32,8 @@ export class FormsComponent {
   public barChartLegend = true;
 
   public barChartData: any[] = [
-    { data: [12, 9, 5, 13, 11, 3, 2], label: 'ibuprofen' },
-    { data: [3, 6, 13, 14, 7, 3, 8], label: 'acetaminophen' }
+    { data: [12, 9, 5, 13, 11, 3, 5], label: 'ibuprofen' },
+    { data: [3, 6, 13, 14, 7, 5, 8], label: 'acetaminophen' }
   ];
 
   constructor() {}
