@@ -2,40 +2,156 @@
   <div class="row">
     <div class="col-md-6">
       <div class="card">
-        <div class="card-header"><h4>Suggested diagnosis</h4></div>
+        <div class="card-header"><h4>ICHD Results</h4></div>
         <div class="card-body">
-          <div class="chart-wrapper">
-            <canvas
-              baseChart
-              class="chart"
-              [data]="polarAreaChartData"
-              [labels]="polarAreaChartLabels"
-              [legend]="polarAreaLegend"
-              [chartType]="polarAreaChartType"
-              (chartHover)="chartHovered($event)"
-              (chartClick)="chartClicked($event)"
-            ></canvas>
-          </div>
+          <table class="table table-hover table-responsive-sm table-bordered">
+            <thead>
+              <tr>
+                <th>Question</th>
+                <th>Answer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Was the onset of a headache sudden?</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Is your headache generally unilateral?</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>How is your pain/headache generally localized?</td>
+                <td>Frontal pain</td>
+              </tr>
+              <tr>
+                <td>Rate your pain on a scale of 1 to 10</td>
+                <td>6-10</td>
+              </tr>
+              <tr>
+                <td>How long does your headache last?</td>
+                <td>More than 4 hours</td>
+              </tr>
+
+              <tr>
+                <td>Is nausea/vomiting accompanied by pain?</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>
+                  Are you hypersensitive to noise/light during your headache
+                  attack?
+                </td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>
+                  Have you had previously described headache attacks at least 5
+                  times?
+                </td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>
+                  Have you experienced any of the following symptoms during your
+                  headache attack?
+                </td>
+                <td>
+                    Visual disorder,<br>Speech disorder,<br>Motor disorder
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                  Have you had previously described symptoms at least twice
+                  during your headache attacks?
+                </td>
+                <td>Yes</td>
+              </tr>
+
+              <tr>
+                <td>
+                  How many days per month do you need painkillers to treat your
+                  pain?
+                </td>
+                <td>15-31 days</td>
+              </tr>
+              <tr>
+                <td>What kind of medications do you use?</td>
+                <td>ibuprofen,<br>acetaminophen</td>
+              </tr>
+              <tr>
+                <td>
+                  What is the amount of medication (the dosage) that you use
+                  daily?
+                </td>
+                <td>2-3</td>
+              </tr>
+              <tr>
+                <td>Are your medications effective to treat your pain?</td>
+                <td>Rather no</td>
+              </tr>
+              <tr>
+                <td>How long have you been experiencing headache?</td>
+                <td>For 15 years</td>
+              </tr>
+              <tr>
+                <td>How do you describe your pain?</td>
+                <td>Pulsating</td>
+              </tr>
+              <tr>
+                <td>
+                  Is your headache intensity increased by routine physical
+                  activity (walking, climbing stairs)?
+                </td>
+                <td>Yes. Physical activity makes it even worse.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
 
     <div class="col-md-6">
-      <div class="card">
-          <div class="card-header"><h4>Amount of medications consumed</h4></div>
-        <div class="card-body">
-          <div class="chart-wrapper">
-            <canvas
-              baseChart
-              class="chart"
-              [datasets]="barChartData"
-              [labels]="barChartLabels"
-              [options]="barChartOptions"
-              [legend]="barChartLegend"
-              [chartType]="barChartType"
-              (chartHover)="chartHovered($event)"
-              (chartClick)="chartClicked($event)"
-            ></canvas>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header"><h4>Suggested diagnosis</h4></div>
+            <div class="card-body">
+              <div class="chart-wrapper">
+                <canvas
+                  baseChart
+                  class="chart"
+                  [data]="polarAreaChartData"
+                  [labels]="polarAreaChartLabels"
+                  [legend]="polarAreaLegend"
+                  [chartType]="polarAreaChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"
+                ></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h4>Amount of medications consumed</h4>
+            </div>
+            <div class="card-body">
+              <div class="chart-wrapper">
+                <canvas
+                  baseChart
+                  class="chart"
+                  [datasets]="barChartData"
+                  [labels]="barChartLabels"
+                  [options]="barChartOptions"
+                  [legend]="barChartLegend"
+                  [chartType]="barChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"
+                ></canvas>
+              </div>
+            </div>
           </div>
         </div>
       </div>
